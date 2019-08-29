@@ -9,6 +9,7 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
+    2.tims (@recipe.ingridients.build)
   end
 
   def create
