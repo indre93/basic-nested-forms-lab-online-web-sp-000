@@ -13,8 +13,6 @@ class RecipesController < ApplicationController
 
   def create
     @recipe = Recipe.create(recipe_params)
-    @recipe.ingridients.build
-
     redirect_to recipe_path(@recipe)
   end
 
