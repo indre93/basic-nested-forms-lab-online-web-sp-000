@@ -3,11 +3,11 @@
   <%= f.text_field :title %><br>
 
   <%= f.fields_for :ingredients do |ing| %>
-    <%= ing.label :name, :recipe_ingredients_attributes_0_quantity %>
-    <%= ing.text_field :name %><br>
-
     <%= ing.label :quantity %>
     <%= ing.text_field :quantity %><br>
+
+    <%= ing.label :name %>
+    <%= ing.text_field :name %><br>
   <% end %>
 
   <%= f.submit %>
